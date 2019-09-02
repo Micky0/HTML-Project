@@ -1,3 +1,67 @@
 body{
     font font-family: sans-serif;
+    margin: 10;
 }
+
+header {
+    border-style: solid; /*for testing*/
+    border-width: 1px;
+    text-align: center;
+}
+
+.content_container{
+    border-style: solid; /*for testing*/
+    border-width: 1px;
+    
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.nav_container {
+    border-style: solid; /*for testing*/
+    border-width: 1px;
+    
+    padding: 10px;
+    
+}
+
+.page_container {
+    border-style: solid; /*for testing*/
+    border-width: 1px;
+    
+    width: 100%;
+    padding: 10px;
+    
+}
+
+
+
+footer {
+    border-style: solid; /*for testing*/
+    border-width: 1px;
+    
+    text-align: center;
+    font-size: 0.5em;
+}
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  .content_container {
+    flex-direction: column;
+    height: auto;
+    
+   
+    }
+    .nav_container {
+    width: 100%;
+      }
+    
+    .nav ul{
+      display: flex;
+      justify-content: space-around;
+    }
+}
+    
