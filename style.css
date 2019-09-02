@@ -1,42 +1,56 @@
- {
+ 
+/* I need to use Flexbox in order to make a decent layout*/
+
+{
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
 
 /* Style the header */
 header {
+  width: 100%;
   background-color: #666;
-  padding: 30px;
+  padding: 5px;
   text-align: center;
-  font-size: 35px;
+  font-size: 20px;
   color: white;
 }
+.page{
+    width: 100%;
+    background-color: #f1f1f1;
 
+}
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
+  padding: 10px;  
+  width: 8%;
+  height:auto;
+  background-color: #ccc;
+  text-align: center
+  
 }
 
 /* Style the list inside the menu */
 nav ul {
+  display: block;
   list-style-type: none;
-  padding: 0;
+  padding: 0px;
 }
 
-article {
+.main {
   float: left;
-  padding: 20px;
-  width: 70%;
+  padding: 10px;
+  width: 87%;
   background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
+
+  }
+
 
 /* Clear floats after the columns */
 section:after {
@@ -48,15 +62,25 @@ section:after {
 /* Style the footer */
 footer {
   background-color: #777;
-  padding: 10px;
+  width: 100%;
+  padding: 5px;
   text-align: center;
   color: white;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
+@media (max-width: 800px) {
+  nav, .main {
     width: 100%;
     height: auto;
+    padding: 10px;
+    overflow: scroll;
+    
+  }
+    nav ul{
+    display: flex;
+    justify-content: space-around;
+    
   }
 }
+    
