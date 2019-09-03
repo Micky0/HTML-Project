@@ -34,7 +34,13 @@ header {
     padding: 10px;
     
 }
-
+.page {
+    border-style: solid; /*for testing*/
+    border-width: 1px;
+    
+    width: 100%;
+    padding: 10px;
+}
 
 
 footer {
@@ -55,7 +61,7 @@ footer {
     
    
     }
-    .nav_container {
+    .nav_container .page {
     width: 100%;
       }
     
